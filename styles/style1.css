@@ -1,0 +1,511 @@
+/*
+filename: style.css
+
+author: Toan Nguyen Nhu Duc
+
+created: 07/04/2025
+
+last modified: 14/04/2025
+
+description: The style file of the job.html
+*/
+
+/* Changing the heading font, color by using shorthand font property*/
+
+.box_header{
+    font: normal 50px Times;
+    color:navy;
+
+}
+
+header{
+    background-color: navy; 
+    color:white;
+    padding: 20px 0;
+}
+
+.header-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.logo{
+    width:170px;
+    height: auto;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+nav{
+    display: flex; 
+    justify-content: space-around;/*Allocate the nav element to divide equally*/
+    align-items: center; /* Move items to the center of the nav */
+    border: 2px solid; /* create Border for the menu*/
+}
+
+nav a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover { /*Make the element change to organe when the mouse hover*/
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+.content_box{ /*Create the box for different sections*/
+    height: 40%;
+    width:99%;
+    border: 2px solid navy;
+    box-shadow: 10px 2px 2px 2px tan;
+    padding: 20px 20px;
+    margin: 7px;
+    color:navy;
+}
+
+ul{ /*Aligning the list elements*/
+    padding: 10px 40px;
+    margin: 7px;
+}
+
+/*Create small box for summarize details for the job-description */
+.small_description{
+    display: inline-block; /* All content in 1 line*/
+    text-decoration: none;
+    padding:0.2em 0.5em; /*Create small gap between border and the content for better visibility*/
+    background-color: #cdced1;
+    border-radius: 5%;
+}
+
+/*Change style of the aside and footer elements to a smaller italic font*/
+aside,footer{
+    font-style: italic;
+    font-size: small;
+}
+
+/*Move aside content to the right */
+aside{
+    border:3px inset gray;
+    border-radius: 5%;
+    margin: 1em;
+    padding : 1em;
+    width:25%; 
+    float:right;
+    box-shadow: 12px 12px 2px 1px gray; /*Create effect for the content to make it completely stand out from the original content*/
+}
+/*Border to differentitate the content and the footer element*/
+footer{
+    border-top: 4px double navy;
+    clear:both;/*Make sure that the footer will stand in a single line without touching anything , i.e the logo of the company */
+    text-align: center; /* Move all the text to the CENTER of the footer*/
+    background-color: navy;
+    color:white;
+}
+
+
+
+footer a{
+    color:#ff9900;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+ol li:first-child{float: left;} /*Make the odd numbers float to the left side , even numbers float to the right side*/
+ol li:nth-child(2){float: right;}
+ol li:nth-child(3){float: left;}
+ol li:nth-child(4){float: right;}
+ol li:last-child{float: left;}
+
+.mandatory{
+    list-style-type:square; /* Make essential requirements's bullet points become square*/
+}
+
+.optional{
+    list-style-type:circle; /* Make preferable requirements's bullet points become circle*/
+}
+
+
+.benefits{
+    list-style-type:upper-roman; /* Make benefits's bullet points become Roman Number and the Key Responsibilities are normal bullet points */
+}
+
+.program_logo {
+    display: flex;           /* Makes images line up horizontally */
+    gap: 10px;               
+    align-items: center;
+    float:right;     
+  }
+.program_logo img {
+    max-height: 150px;       /* Adjust as needed */
+  }
+
+/*
+filename: styles.css
+
+author: Shafiullah Mohammad Hakkim
+
+created: 07/04/2025
+
+last modified: 07/04/2025
+
+description: The style file of the index.html
+*/
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+}
+
+/* Header Styles */
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+}
+
+.header-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero-image {
+    background-image: url('images/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: navy;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-image h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-image p {
+    font-size: 1.2em;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-choose-us h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*
+Filename: style.css
+
+Author: Shudhit Hemrajani
+
+Created: 09/04/2025
+
+Last modified: 12/04/2025 3:56PM
+
+Description: The style file of the about.html
+*/
+
+.student-ids {
+    text-align: left; /* Places the text in the list to the left */
+    margin-right: 40px; /* Adding space to the right of the list */
+    list-style-position: inside; /* Ensuring the bullet points are visivble */
+}
+
+#id {
+    float: right; /* Moving the student id towards the right */
+}
+
+.about-head {
+    font-size: 2.5em; /* Making the current font size 2.5x larger then current (em) */
+    margin: 0; /* Removes top and bottom margin */
+    text-align: center; /* Centers text horizontally */
+}
+
+.group-img {
+    margin: 20px; /* Keeps the image with 20px margin */
+    max-width: 300px; /* Ensures the image doesn’t overflow */
+}
+
+.group-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns image to the right */
+    text-align: center;
+    gap: 10px; /* Optional: adds space between image and caption */
+}
+
+.group-img figcaption {
+    font-size: 1.5em; /* Making the caption 1.5x larger then current size */
+    font-weight: bold; /* Making the text bold */
+    margin-bottom: 10px; /* Adding 10 pixel margin from bottom */
+}
+
+.group-img img {
+    border: 2px solid #333; /* Adds a solid dark border around the image */
+    max-width: 100%; /* Ensures the image doesn't stretch beyond its container */
+    height: auto; /* Maintains the original aspect ratio */
+    display: block; /* Prevents inline display issues */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.interests {
+    margin: 0 auto; /* centering the table with setting the margins to be auto */
+    border-collapse: collapse; /* removes spacing from borders */
+    width: 80%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; /* setting font to be times new roman */
+}
+
+.interests th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Had issue coudln't resolve, generated assisted by AI */
+.interests td {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-weight: normal;
+    transition: background-color 0.3s ease; /* adds smooth tranisiton effect when hovering */
+}
+
+/* Apply hover effect only to td, not the entire row */
+.interests td:hover {
+    background-color: #cceeff;
+}
+
+.table-title {
+    text-align: center;
+    width: 80%;
+    margin: 20px auto 10px auto;
+    font-weight: bold;
+}
+
+.interests,
+.interests th,
+.interests td {
+    border: 1px solid black; /* Adds the table border */
+}
+
+.group-profile-box {
+    border: 2px solid navy;
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* AI generated, adds a shadow effect for a lifted box appearance */
+}
+
+/*
+
+filename: styles.css
+
+author: Nicholas Kan
+
+created: 09/04/2025 
+
+last modified: 13/04/2025 
+
+description: lThe style file of apply.html
+
+*/
+
+.main-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 30px auto; 
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 10px 2px 2px 2px tan;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+/* Body and Global Styles */
+
+body {
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+}
+
+/* Header Styles */
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+}
+
+footer{
+    border-top: 4px double navy;
+    clear: both;
+    text-align: center; 
+    background-color: navy;
+    color: white;
+    font-style: italic;
+    font-size: small;
+}
+
+footer a{
+    color:#ff9900;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.skills {
+    max-width: 1200px;
+}
+
+/* Design for submit button, AI generated 
+    Prompt: Design a submit button with CSS saying 'apply' */
+
+.submit {
+    background-color: #031f54;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
