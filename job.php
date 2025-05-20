@@ -1,4 +1,5 @@
 <?php
+require_once('settings.php');
 $conn = new mysqli("localhost", "root", "", "eoi");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -13,29 +14,15 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <title>Job Descriptions</title>
     <link href="styles/style1.css" rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content = "Job description for Software and Website Designer">
+    <meta name ="keyword" content= "Jobs, Software Developer, Website Desginer, Front-end, Back-end, Description ">
+    <meta name = "author"  content ="Duc Toan">
+    <meta>
 </head>
 <body>
 
-<header>
-    <div class="header-container">
-        <img src="styles/images/image.logo.png" alt="Logo" class="logo">
-        <div class="header-text">
-            <h1>Tech Network Software Solutions</h1>
-            <p>Advanced Software Development Company Hiring the Best Talent in the Industry</p>
-        </div>
-    </div>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="job.php">Job Description</a></li>
-        <li><a href="apply.php">Apply</a></li>
-        <li><a href="about.php">About Us</a></li>
-        <li><a href="mailto:info@TechNetworkSoftwaresolutions.com.au">Contact Us</a></li>
-    </ul>
-</nav>
-
+<?php include 'header.inc'; ?>
 <?php
 if ($result->num_rows > 0) {
     while ($job = $result->fetch_assoc()) {
@@ -87,13 +74,9 @@ if ($result->num_rows > 0) {
     echo "<p>No job listings available.</p>";
 }
 
-$conn->close();
+mysqli_close($conn)
 ?>
-
-<footer>
-    <p>&copy; 2025 TechNetwork Software Solutions. All rights reserved.</p>
-    <p><a href="https://your-jira-project-link.com">Jira Project Link</a></p>
-</footer>
+<?php include 'footer.inc'; ?>
 
 </body>
 </html>
