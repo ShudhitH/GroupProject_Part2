@@ -81,8 +81,8 @@ ul{ /*Aligning the list elements*/
 .small_description{
     display: inline-block; /* All content in 1 line*/
     text-decoration: none;
-    padding:1em 0.5em; /*Create small gap between border and the content for better visibility*/
-    margin: 1em;
+    padding:0.2em 0.5em; /*Create small gap between border and the content for better visibility*/
+    margin: 0.1em;
     background-color: #cdced1;
     border-radius: 5%;
 }
@@ -152,6 +152,26 @@ ol li:last-child{float: left;}
 .program_logo img {
     max-height: 150px;       /* Adjust as needed */
   }
+
+.quick-apply-button {
+    display: inline-block;
+    background-color: #031f54;  /* Navy tone */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin: 15px;
+}
+
+.quick-apply-button:hover {
+    background-color: #ff9900;  /* Highlight on hover */
+    color: navy;
+}
+
 
 /*
 filename: styles.css
