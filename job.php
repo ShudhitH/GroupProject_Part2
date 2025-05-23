@@ -13,24 +13,25 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Job Descriptions</title>
-    <link href="styles/style1.css" rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="description" content = "Job description for Software and Website Designer">
     <meta name ="keyword" content= "Jobs, Software Developer, Website Desginer, Front-end, Back-end, Description ">
     <meta name = "author"  content ="Duc Toan">
-    <meta>
+    <link href="styles/style1.css" rel='stylesheet'>
 </head>
 <body>
 
 <?php include 'header.inc'; ?>
 <?php
+
 if ($result->num_rows > 0) {
     while ($job = $result->fetch_assoc()) {
         echo "<section class='content_box'>";
         echo "<h2 class='box_header'><strong>" . htmlspecialchars($job['title']) . "</strong></h2>";
-        echo "<div><p class='small_description'>" . $job['type'] . "</p>";
+        echo "<p class='small_description'>" . $job['type'] . "</p>";
         echo "<p class='small_description'>" . $job['experience'] . "</p>";
-        echo "<p class='small_description'>" . $job['salary'] . "</p></div>";
+        echo "<p class='small_description'>" . $job['salary'] . "</p>";
+
         echo "<p>" . nl2br(htmlspecialchars($job['description'])) . "</p>";
         echo "<h3><strong>Job Summary:</strong></h3>";
         echo "<p><strong>Position Reference Number: </strong>" . $job['reference_number'] . "</p>";

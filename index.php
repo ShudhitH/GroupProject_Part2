@@ -22,7 +22,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="job.html">Job Description</a></li>
+            <li><a href="job.php">Job Description</a></li>
             <li><a href="apply.html">Apply</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="mailto:info@TechNetworkSoftwaresolutions.com.au">Contact Us</a></li>

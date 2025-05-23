@@ -1,3 +1,13 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Job Descriptions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content = "Job description for Software and Website Designer">
+    <meta name ="keyword" content= "Jobs, Software Developer, Website Desginer, Front-end, Back-end, Description ">
+    <meta name = "author"  content ="Duc Toan">
+    <link href="styles/style1.css" rel='stylesheet'>
+</head>
+
 <header>
     <div class="header-container">
         <img src="styles/images/image.logo.png" alt="Logo" class="logo">

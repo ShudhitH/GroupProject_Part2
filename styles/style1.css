@@ -77,11 +77,12 @@ ul{ /*Aligning the list elements*/
     margin: 7px;
 }
 
-/*Create small box for summarize details for the job-description */
+
 .small_description{
     display: inline-block; /* All content in 1 line*/
     text-decoration: none;
-    padding:0.2em 0.5em; /*Create small gap between border and the content for better visibility*/
+    padding:1em 0.5em; /*Create small gap between border and the content for better visibility*/
+    margin: 1em;
     background-color: #cdced1;
     border-radius: 5%;
 }
