@@ -22,10 +22,10 @@
     
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="job.html">Job Description</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="job.php">Job Description</a></li>
+            <li><a href="apply.php">Apply</a></li>
+            <li><a href="about.php">About Us</a></li>
             <li><a href="mailto:info@TechNetworkSoftwaresolutions.com.au">Contact Us</a></li>
         </ul>
     </nav>
@@ -40,8 +40,8 @@
             <label for="Job-Reference-Number">Job Reference Number:</label>
                 <select id="Job-Reference-Number" name="jobReferenceNumber" required>
                     <option value="">Select a job</option>
-                    <option value="Software Developer">SD289</option>
-                    <option value="Website Designer">WD229</option>
+                    <option value="SD289">SD289</option>
+                    <option value="WD229">WD229</option>
                 </select><br><br>
             <!-- Selection for all job reference numbers with values of the actual jobs -->
 
@@ -66,11 +66,11 @@
             <fieldset>
                 <legend>Gender</legend>
                 <!-- 'radio' means that the options to select from on the application page will have circles next to them that you can click on (Only 1 allowed to be selected)-->
-                <input type="radio" id="male" name="Gender" value="Male" required>
+                <input type="radio" id="male" name="gender" value="Male" required>
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="Gender" value="Female">
+                <input type="radio" id="female" name="gender" value="Female">
                 <label for="female">Female</label>
-                <input type="radio" id="other" name="Gender" value="Other">
+                <input type="radio" id="other" name="gender" value="Other">
                 <label for="other">Other</label>
             </fieldset><br>
 
@@ -86,7 +86,7 @@
 
             <!-- State -->
             <label for="State">State:</label>
-                <select id="State" name="State" required>
+                <select id="State" name="state" required>
                     <option value="">Select</option>
                     <option value="VIC">VIC</option>
                     <option value="NSW">NSW</option>
@@ -100,7 +100,7 @@
 
             <!-- Postcode -->
                 <label for="Postcode">Postcode:</label>
-                    <input type="text" id="Postcode" name="Postcode" pattern="\d{4}" required><br><br>
+                    <input type="text" id="Postcode" name="postcode" pattern="\d{4}" required><br><br>
             <!-- 'pattern="\d{4}"' mkes it so that only 4 *digits* are allowed -->
             <!-- what does '4 digits based on States' mean? -->
 
@@ -131,7 +131,7 @@
 
             <!-- Other Skills -->
                 <label for="Other-Skills">Other Skills:</label><br>
-                    <textarea id="Other-Skills" name="Other-Skills" rows="4" cols="40"></textarea><br><br>
+                    <textarea id="Other-Skills" name="otherSkills" rows="4" cols="40"></textarea><br><br>
             <input type="checkbox" id="OtherSkillsCheckbox" name="otherSkillsCheckbox">
             <label for="OtherSkillsCheckbox">I have additional skills</label><br><br>
             <!-- Allows for survey-fillers to state their skills outside of the required technical ones -->

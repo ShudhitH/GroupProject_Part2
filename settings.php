@@ -2,5 +2,5 @@
 $host = "localhost";
 $user = "root";
 $pwd = "";
-$sql_db = "eoi"; // Replace with your actual DB name
+$sql_db = "process_eoi.php"; 
 
