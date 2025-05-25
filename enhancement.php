@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Enhancements</title>
   <meta name="author" content="Shafiullah Mohamed Hakkim" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/style1.css" />
 </head>
 <body>
   <?php include("header.inc"); ?>
