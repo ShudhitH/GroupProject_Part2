@@ -113,6 +113,21 @@ aside,footer{
     background-color: #0056b3;
 }
 
+.return-button {
+    padding: 10px 15px;
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    display: inline-block;
+    margin-top: 20px;
+}
+.return-button:hover {
+    background-color: #bbb;
+}
+
+
 
 
 /*Move aside content to the right */

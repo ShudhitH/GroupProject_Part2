@@ -105,6 +105,13 @@ $conn->close();
             <!-- Submit button -->
             <input type="submit" value="Update Job" class="quick-apply-button">
         </form>
+        <!-- Return Button -->
+    <div style="margin-top: 20px;">
+    <a href="job.php" class="return-button">
+        &#8592; Return to Job Listings
+    </a>
+    </div>
+
     </section>
 </main>
 

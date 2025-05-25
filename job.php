@@ -5,11 +5,6 @@ require_once('settings.php');
 // Create a connection to the MySQL database
 $conn = new mysqli("localhost", "root", "", "eoi");
 
-// Check for connection errors
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 // SQL query to fetch all job listings from the database
 $sql = "SELECT * FROM jobs";
 $result = $conn->query($sql);
