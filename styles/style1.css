@@ -567,3 +567,30 @@ footer a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.why-choose-us {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .why-choose-us h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .feature {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1.1em;
+  }
