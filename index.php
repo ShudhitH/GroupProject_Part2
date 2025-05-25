@@ -9,15 +9,31 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
-  <?php include("header.inc"); ?>
-  <?php include("nav.inc"); ?>
-
-  <main>
-    <section class="intro">
-      <h2>Join Our Team</h2>
-      <p>At TechSphere Solutions, we are always looking for talented individuals to join our team. If you're passionate about technology and want to make a real impact, explore our exciting career opportunities today!</p>
-    </section>
+    <header>
+        <div class="header-container">
+            <img src="styles/images/image.logo.png" alt="TechNetwork Software Solutions Logo" class="logo">
+            <div class="header-text">
+                <h1>Tech Network Software Solutions</h1>
+                <p>Advanced Software Development Company Hiring the Best Talent in the Industry</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job.php">Job Description</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mailto:info@TechNetworkSoftwaresolutions.com.au">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="hero-image">
+            <h2>Join Our Team</h2>
+            <p>At TechNetwork Software Solutions, we are always looking for talented individuals to join our team. If you are passionate about technology and want to make a difference, we would love to hear from you!</p>
+        </section>
 
     <section class="why-us">
       <h2>Why Choose Us?</h2>
