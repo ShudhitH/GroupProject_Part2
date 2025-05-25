@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // checks if form was submitted using POST, otherwise it redirects back to form page
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header("Location: your_form_page.php"); // redirect to the form page
+    header("Location: apply.php"); // redirect to the form page
     exit();
 }
 
