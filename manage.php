@@ -1,4 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Manage EOIs</title></head>
+<body>
+
+<h1>Manage EOIs</h1>
+
+<!-- List All EOIs -->
+<form method="post" action="manage.php" style="margin-bottom:20px;">
+  <button type="submit" name="action" value="list_all">List All EOIs</button>
+</form>
+
+<!-- List EOIs by Job Reference -->
+<form method="post" action="manage.php" style="margin-bottom:20px;">
+  <input type="text" name="job_ref" placeholder="Job Reference Number" required>
+  <button type="submit" name="action" value="list_by_job">List EOIs by Job Ref</button>
+</form>
+
+<!-- List EOIs by Applicant Name -->
+<form method="post" action="manage.php" style="margin-bottom:20px;">
+  <input type="text" name="first_name" placeholder="First Name">
+  <input type="text" name="last_name" placeholder="Last Name">
+  <button type="submit" name="action" value="list_by_applicant">List EOIs by Applicant</button>
+</form>
+
+<!-- Delete EOIs by Job Reference -->
+<form method="post" action="manage.php" style="margin-bottom:20px;">
+  <input type="text" name="job_ref" placeholder="Job Reference Number" required>
+  <button type="submit" name="action" value="delete_by_job">Delete EOIs by Job Ref</button>
+</form>
+
+<!-- Change Status of an EOI -->
+<form method="post" action="manage.php" style="margin-bottom:20px;">
+  <input type="number" name="eoi_number" placeholder="EOI Number" required>
+  <input type="text" name="status" placeholder="New Status" required>
+  <button type="submit" name="action" value="change_status">Change EOI Status</button>
+</form>
+
+<hr>
+
+
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require_once("settings.php");
 
 // Create DB connection
@@ -69,9 +113,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <td>{$row['lastName']}</td>
                             <td>{$row['emailAddress']}</td>
                             <td>{$row['phoneNumber']}</td>
-                            <td>{$row['status']}</td>
+                            <td>" . (isset($row['status']) ? $row['status'] : '') . "</td>
                         </tr>";
                     }
+
                     $output .= "</table>";
                 } else {
                     $output = "No matching records found.";
@@ -85,5 +130,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+echo $output;
+
 mysqli_close($conn);
 ?>
+</body>
+</html>
