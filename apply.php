@@ -10,25 +10,8 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <img src="styles/images/image.logo.png" alt="TechNetwork Software Solutions Logo" class="logo">
-            <div class="header-text">
-                <h1>Tech Network Software Solutions</h1>
-                <p>Advanced Software Development Company Hiring the Best Talent in the Industry</p>
-            </div>
-        </div>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="job.php">Job Description</a></li>
-            <li><a href="apply.php">Apply</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="mailto:info@TechNetworkSoftwaresolutions.com.au">Contact Us</a></li>
-        </ul>
-    </nav>
+<?php include 'header.inc'; ?><!-- Header include -->
+<?php include 'nav.inc'; ?> <!-- Navigation bar include -->
     <br>
     <main class="main-3">
         <img src="styles/images/job.application.jpg" alt="Job Application Logo" width="757" height="400"><hr>
@@ -41,7 +24,9 @@
                 <select id="Job-Reference-Number" name="jobReferenceNumber" required>
                     <option value="">Select a job</option>
                     <option value="SD289">SD289</option>
-                    <option value="WD229">WD229</option>
+                    <option value="WD102">WD102</option>
+                    <option value="CYB2025">CYB2025</option>
+                    <option value="DA203">DA203</option>
                 </select><br><br>
             <!-- Selection for all job reference numbers with values of the actual jobs -->
 
