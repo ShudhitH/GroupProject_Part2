@@ -40,6 +40,13 @@
 
 
 <?php
+
+session_start();
+if (!isset($_SESSION['logged_in'])) {
+    header("LocationL access.php");
+    exit();
+}
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -131,6 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 echo $output;
+echo "<br><a href='index.php'>Return back home</a>";
 
 mysqli_close($conn);
 ?>
