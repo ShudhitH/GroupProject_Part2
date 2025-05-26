@@ -1,22 +1,12 @@
 <?php
+session_start();
 require_once("settings.php");
-
-$conn = mysqli_connect($host, $user, $pwd, $sql_db);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input_username = trim($_POST['username']);
     $input_password = trim($_POST['password']);
-     // Use prepared statements to prevent SQL injection, with help from AI
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
-    $stmt->bind_param("ss", $input_username, $input_password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        $_SESSION['username'] = $input_username;
+    if ($input_username === 'user' && $input_password === 'password') {
+        $_SESSION['logged_in'] = true;
         header("Location: manage.php");
         exit();
     } else {
