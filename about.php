@@ -143,7 +143,7 @@
         Nationality: Indian<br>
         Gender: Male<br>
         Hometown: Dubai, United Arab Emirates<br>
-        Favourite things to do: Basketball, soccer, volleyball, music - rnb
+        Favourite things to do: Watch F1, Play games
       </p>
       <p class="group-profile-box">
         Nicholas Kan: <br>
@@ -152,7 +152,7 @@
         Nationality: Malaysian/Vietnamese<br>
         Gender: Male<br>
         Hometown: Cranbourne, Victoria<br>
-        Favourite things to do: Watch F1, Play games
+        Favourite things to do: Basketball, soccer, volleyball, music - rnb 
       </p>
       <p class="group-profile-box">
         Shafiullah Mohamed Hakkim <br>
